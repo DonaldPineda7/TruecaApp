@@ -5,21 +5,46 @@ namespace TruecaApp.ViewModels
 {
     public class MainViewModel
     {
+        #region Properties
+        public LoginViewModel Login
+        {
+            get;
+            set;
+        }
+
         public ObservableCollection<MenuItemViewModel> Menu
         {
             get;
             set;
         }
 
+        public ProfileViewModel Profile
+        {
+            get;
+            set;
+        }
+        #endregion
+
+        #region Constructor
         public MainViewModel()
         {
             LoadMenu();
+            Login = new LoginViewModel();
         }
+        #endregion
 
         #region Methods
         private void LoadMenu()
         {
             Menu = new ObservableCollection<MenuItemViewModel>();
+
+			Menu.Add(new MenuItemViewModel
+			{
+				Icon = "",
+				PageName = "LoginPage",
+				Title = "Login"
+			});
+
             Menu.Add(new MenuItemViewModel
             {
                 Icon ="icons8-Info-100.png",
@@ -58,8 +83,8 @@ namespace TruecaApp.ViewModels
 			Menu.Add(new MenuItemViewModel
 			{
 				Icon = "",
-				PageName = "",
-				Title = "Politica de privacidad"
+				PageName = "LoginPage",
+				Title = "Logout"
 			});
         }
         #endregion

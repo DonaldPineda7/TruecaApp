@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="TruecaApp.Pages.LoginPage"
+    Title="Trueca"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}">
+	<ContentPage.Content>
+        <StackLayout
+            BindingContext ="{Binding Login}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Button
+                Command="{Binding LoginGoogleCommand}"
+                Image=""
+                IsEnabled="{Binding IsEnable}"
+                Text="Enter with Google">
+            </Button>
+            <Button
+                Command="{Binding LoginFacebookCommand}"
+                Image=""
+                IsEnabled="{Binding IsEnable}"
+                Text="Enter with Facebook">
+            </Button>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

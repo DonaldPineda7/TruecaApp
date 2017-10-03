@@ -1,8 +1,14 @@
 ﻿using System;
+using System.Windows.Input;
+using GalaSoft.MvvmLight.Command;
+using TruecaApp.Services;
+
 namespace TruecaApp.ViewModels
 {
     public class MenuItemViewModel
     {
+        private NavigationService navigationService;
+        
         public string Icon
         {
             get;
@@ -23,6 +29,23 @@ namespace TruecaApp.ViewModels
 
         public MenuItemViewModel()
         {
+            navigationService = new NavigationService();
+        }
+
+        public ICommand NavigateCommand
+        {
+            get
+            {
+                return new RelayCommand(Navigate);
+            }
+        }
+
+        private void Navigate()
+        {
+            if(PageName == "LoginPage")
+            {
+                navigationService.SetMainPage("LoginPage");
+            }
         }
     }
 }

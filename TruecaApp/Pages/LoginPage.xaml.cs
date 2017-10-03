@@ -1,11 +1,11 @@
 ﻿using TruecaApp.ViewModels;
 using Xamarin.Forms;
 
-namespace TruecaApp.Views
+namespace TruecaApp.Pages
 {
-    public partial class MainView : ContentPage
+    public partial class LoginPage : ContentPage
     {
-        public MainView()
+        public LoginPage()
         {
             InitializeComponent();
         }
