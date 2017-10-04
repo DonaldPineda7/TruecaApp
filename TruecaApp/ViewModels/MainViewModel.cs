@@ -40,7 +40,7 @@ namespace TruecaApp.ViewModels
 
 			Menu.Add(new MenuItemViewModel
 			{
-				Icon = "",
+				Icon = "icons8-Login-100.png",
 				PageName = "LoginPage",
 				Title = "Login"
 			});
@@ -54,35 +54,35 @@ namespace TruecaApp.ViewModels
 
 			Menu.Add(new MenuItemViewModel
 			{
-				Icon = "",
+				Icon = "icons8-Help-100.png",
 				PageName = "",
 				Title = "Ayuda"
 			});
 
 			Menu.Add(new MenuItemViewModel
 			{
-				Icon = "",
+				Icon = "icons8-Quote-100.png",
 				PageName = "",
 				Title = "Consejos de seguridad"
 			});
 
 			Menu.Add(new MenuItemViewModel
 			{
-				Icon = "",
+				Icon = "icons8-Rules-100.png",
 				PageName = "",
 				Title = "Normas de la comunidad"
 			});
 
 			Menu.Add(new MenuItemViewModel
 			{
-				Icon = "",
+				Icon = "icons8-Term-100.png",
 				PageName = "",
 				Title = "Terminos y Condiciones"
 			});
 
 			Menu.Add(new MenuItemViewModel
 			{
-				Icon = "",
+				Icon = "icons8-Sign Out-100.png",
 				PageName = "LoginPage",
 				Title = "Logout"
 			});
