@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using TruecaApp.Classes;
 using TruecaApp.Pages;
+using TruecaApp.Services;
 using TruecaApp.ViewModels;
 using TruecaApp.Views;
 using Xamarin.Forms;
@@ -10,7 +11,13 @@ namespace TruecaApp
 {
     public partial class App : Application
     {
-       
+
+        #region attributes
+        private ApiService apiService;
+
+        #endregion
+
+
         public static Action HideLoginView
         {
             get
@@ -19,18 +26,17 @@ namespace TruecaApp
             }
         }
 
-        public static void NavigateToProfile(FacebookResponse profile)
+        public async void NavigateToProfile(FacebookResponse profile)
         {
-            var profileViewModel = new ProfileViewModel(profile);
-            var mainViewModel = MainViewModel.GetInstance();
-            mainViewModel.Profile = profileViewModel;
-            App.Current.MainPage = new ProfilePage();
+            var response = await apiService.LoginFacebook("", "/api", "/Users", profile);
         }
 
         #region Constructor
         public App()
         {
             InitializeComponent();
+
+            apiService = new ApiService();
             MainPage = new NavigationPage(new MasterPage());
         }
         #endregion
