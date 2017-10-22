@@ -5,41 +5,44 @@
     x:Class="TruecaApp.Pages.MenuPage"
     Title="Menu"
     BindingContext="{Binding Main, Source={StaticResource Locator}}">
-    <ContentPage.Content>
-        <StackLayout Padding="30">
-            <StackLayout>
-                <ListView
-                    ItemsSource="{Binding Menu}"
-                    SeparatorVisibility="None">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <Grid>
-                                    <Grid.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding NavigateCommand}"/>
-                                    </Grid.GestureRecognizers>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                        <ColumnDefinition Width="*"></ColumnDefinition>
-                                    </Grid.ColumnDefinitions>
-                                    <Image
-                                        Margin="10"
-                                        Source="{Binding Icon}"
-                                        HeightRequest="17"
-                                        VerticalOptions="Center"
-                                        WidthRequest="17">
-                                    </Image>
-                                    <Label
-                                        Grid.Column="1"
-                                        VerticalOptions="Center"
-                                        Text="{Binding Title}">
-                                    </Label>
-                                </Grid>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </StackLayout>
-       </StackLayout>
-    </ContentPage.Content>
+    <StackLayout Padding="30">
+        <StackLayout>
+            <Label
+                FontAttributes="Bold"
+                FontSize="48"
+                Text="Trueca">
+            </Label>
+            <ListView
+                ItemsSource="{Binding Menu}"
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding NavigateCommand}"/>
+                                </Grid.GestureRecognizers>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image
+                                    Margin="10"
+                                    Source="{Binding Icon}"
+                                    HeightRequest="17"
+                                    VerticalOptions="Center"
+                                    WidthRequest="17">
+                                </Image>
+                                <Label
+                                    Grid.Column="1"
+                                    VerticalOptions="Center"
+                                    Text="{Binding Title}">
+                                </Label>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+   </StackLayout>
 </ContentPage>

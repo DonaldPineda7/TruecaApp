@@ -1,11 +1,18 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using TruecaApp.Classes;
 
 namespace TruecaApp.ViewModels
 {
     public class MainViewModel
     {
         #region Properties
+        public User CurrentUser
+        {
+            get;
+            set;
+        }
+
         public LoginViewModel Login
         {
             get;

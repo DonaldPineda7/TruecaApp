@@ -71,11 +71,12 @@
     <MtouchFastDev>true</MtouchFastDev>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <IOSDebuggerPort>13175</IOSDebuggerPort>
+    <IOSDebuggerPort>13176</IOSDebuggerPort>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
+    <IOSDebugOverWiFi>false</IOSDebugOverWiFi>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -127,6 +128,12 @@
     <Reference Include="Xamarin.Auth.iOS">
       <HintPath>..\Components\xamarin.auth-1.2.3.1\lib\ios-unified\Xamarin.Auth.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\Xamarin.iOS10\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.iOS">
+      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\Xamarin.iOS10\ImageCircle.Forms.Plugin.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TruecaApp\TruecaApp.csproj">
@@ -164,6 +171,7 @@
     <BundleResource Include="Resources\icons8-Term-100.png" />
     <BundleResource Include="Resources\icons8-Sign Out-100.png" />
     <BundleResource Include="Resources\icons8-Male User-100.png" />
+    <BundleResource Include="Resources\icons8-User Male Filled-100.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="xamarin.auth">

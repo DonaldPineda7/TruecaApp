@@ -42,6 +42,34 @@ namespace TruecaApp.Classes
             set;
         }
 
+        [JsonProperty(PropertyName = "first_name")]
+        public string FirstName
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty(PropertyName = "last_name")]
+        public string LastName
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty(PropertyName = "email")]
+        public string Email
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty(PropertyName = "birthday")]
+        public string BirthDate
+        {
+            get;
+            set;
+        }
+
         [JsonProperty(PropertyName = "picture")]
         public Picture Picture
         {

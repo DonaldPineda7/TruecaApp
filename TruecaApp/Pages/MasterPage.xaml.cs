@@ -7,6 +7,7 @@ namespace TruecaApp.Pages
 {
     public partial class MasterPage : MasterDetailPage
     {
+        
         public MasterPage()
         {
             InitializeComponent();
@@ -14,7 +15,7 @@ namespace TruecaApp.Pages
 
         protected override void OnAppearing()
         {
-            //App.Navigator = Navigator;
+            App.Navigator = Navigator;
         }
     }
 }

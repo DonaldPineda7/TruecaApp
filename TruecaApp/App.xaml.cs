@@ -14,10 +14,18 @@ namespace TruecaApp
 
         #region attributes
         private ApiService apiService;
+        private static NavigationService navigationService;
 
         #endregion
 
+        #region properties
+        public static NavigationPage Navigator
+        {
+            get;
+            set;
+        }
 
+        #endregion
         public static Action HideLoginView
         {
             get
@@ -26,9 +34,19 @@ namespace TruecaApp
             }
         }
 
-        public async void NavigateToProfile(FacebookResponse profile)
+        public async static Task NavigateToProfile(FacebookResponse profile)
         {
-            var response = await apiService.LoginFacebook("", "/api", "/Users", profile);
+            //var response = await apiService.LoginFacebook("", "/api", "/Users", profile);
+            var mainViewModel = MainViewModel.GetInstance();
+            mainViewModel.CurrentUser = new User
+            {
+                FirstName = profile.FirstName,
+                LastName = profile.LastName,
+                BirthDate = profile.BirthDate,
+                Email = profile.Email,
+                ProfilePicture = profile.Picture.Data.Url,
+            };
+            navigationService.SetMainPage("MasterPage");
         }
 
         #region Constructor
@@ -37,7 +55,8 @@ namespace TruecaApp
             InitializeComponent();
 
             apiService = new ApiService();
-            MainPage = new NavigationPage(new MasterPage());
+            navigationService = new NavigationService();
+            MainPage = new LoginPage();
         }
         #endregion
 

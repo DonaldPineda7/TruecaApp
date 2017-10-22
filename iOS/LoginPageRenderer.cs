@@ -40,11 +40,11 @@ namespace TruecaApp.iOS
                 {
                     var accessToken = eventArgs.Account.Properties["access_token"].ToString();
                     var profile = await GetFacebookProfileAsync(accessToken);
-                    App.NavigateToProfile(profile);
+                    await App.NavigateToProfile(profile);
                 }
                 else
                 {
-                    App.NavigateToProfile(null);
+                    await App.NavigateToProfile(null);
                 }
             };
 

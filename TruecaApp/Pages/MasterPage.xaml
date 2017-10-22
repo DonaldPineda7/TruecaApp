@@ -9,6 +9,11 @@
         <pages:MenuPage></pages:MenuPage>
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
-        <pages:HomePage/>
+        <NavigationPage
+            x:Name="Navigator">
+            <x:Arguments>
+                <pages:ProfilePage/>
+            </x:Arguments>
+        </NavigationPage>
     </MasterDetailPage.Detail>
 </MasterDetailPage>
