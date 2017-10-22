@@ -44,5 +44,7 @@
 	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>com.trueca.Trueca</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 </dict>
 </plist>
