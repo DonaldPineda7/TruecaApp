@@ -28,6 +28,7 @@ namespace TruecaApp.ViewModels
         #region Constructor
         public MainViewModel()
         {
+            instance = this;
             LoadMenu();
             Login = new LoginViewModel();
         }
