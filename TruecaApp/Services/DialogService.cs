@@ -1,4 +1,6 @@
-﻿namespace TruecaApp.Services
+﻿using System.Threading.Tasks;
+
+namespace TruecaApp.Services
 {
     public class DialogService
     {
