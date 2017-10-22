@@ -13,8 +13,8 @@
             <!-- Colors -->
 
             <!-- Brands -->
-            <Color x:Key="FacebookBlue">#3b5998</Color>
-            <Color x:Key="GoogleRed">#d62d20</Color>
+            <Color x:Key="Facebook">#3b5998</Color>
+            <Color x:Key="Google">#3978E6</Color>
             
             <!-- Light Blue -->
             <Color x:Key="LightBlue-800">#0277BD</Color>
@@ -42,6 +42,19 @@
             <Color x:Key="BlueGray-700">#455A64</Color>
             <Color x:Key="BlueGray-800">#37474F</Color>
             <Color x:Key="BlueGray-900">#263238</Color>
+
+            <!-- Red -->
+            <Color x:Key="Red-50">#FFEBEE</Color>
+            <Color x:Key="Red-100">#FFCDD2</Color>
+            <Color x:Key="Red-200">#EF9A9A</Color>
+            <Color x:Key="Red-300">#E57373</Color>
+            <Color x:Key="Red-400">#EF5350</Color>
+            <Color x:Key="Red-500">#F44336</Color>
+            <Color x:Key="Red-600">#E53935</Color>
+            <Color x:Key="Red-700">#D32F2F</Color>
+            <Color x:Key="Red-800">#C62828</Color>
+            <Color x:Key="Red-900">#B71C1C</Color>
+            
 
                 
             

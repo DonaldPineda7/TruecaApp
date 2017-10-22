@@ -38,54 +38,48 @@ namespace TruecaApp.ViewModels
         {
             Menu = new ObservableCollection<MenuItemViewModel>();
 
-			Menu.Add(new MenuItemViewModel
-			{
-				Icon = "icons8-Login-100.png",
-				PageName = "LoginPage",
-				Title = "Login"
-			});
+            Menu.Add(new MenuItemViewModel
+            {
+                Icon = "icons8-Male User-100.png",
+                PageName = "LoginPage",
+                Title = "Conectate"
+            });
 
             Menu.Add(new MenuItemViewModel
             {
                 Icon ="icons8-Info-100.png",
-                PageName="",
+                PageName="AboutPage",
                 Title = "Acerca de Trueca"
             });
 
 			Menu.Add(new MenuItemViewModel
 			{
 				Icon = "icons8-Help-100.png",
-				PageName = "",
+				PageName = "HelpPage",
 				Title = "Ayuda"
 			});
 
 			Menu.Add(new MenuItemViewModel
 			{
 				Icon = "icons8-Quote-100.png",
-				PageName = "",
+				PageName = "AdvicePage",
 				Title = "Consejos de seguridad"
 			});
 
 			Menu.Add(new MenuItemViewModel
 			{
 				Icon = "icons8-Rules-100.png",
-				PageName = "",
+				PageName = "RulesPage",
 				Title = "Normas de la comunidad"
 			});
 
 			Menu.Add(new MenuItemViewModel
 			{
 				Icon = "icons8-Term-100.png",
-				PageName = "",
+				PageName = "TermsPage",
 				Title = "Terminos y Condiciones"
 			});
-
-			Menu.Add(new MenuItemViewModel
-			{
-				Icon = "icons8-Sign Out-100.png",
-				PageName = "LoginPage",
-				Title = "Logout"
-			});
+			
         }
         #endregion
 

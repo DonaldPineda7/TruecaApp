@@ -1,17 +1,16 @@
-﻿using TruecaApp.Views;
+﻿using TruecaApp.Pages;
+using TruecaApp.Views;
 using Xamarin.Forms;
 
 namespace TruecaApp
 {
     public partial class App : Application
     {
-        public static NavigationPage Navigator { get; internal set; }
-
         public App()
         {
             InitializeComponent();
 
-            MainPage = new Pages.MasterPage();
+            MainPage = new NavigationPage(new MasterPage());
         }
 
         protected override void OnStart()

@@ -3,25 +3,47 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="TruecaApp.Pages.LoginPage"
-    Title="Trueca"
-    BindingContext="{Binding Main, Source={StaticResource Locator}}">
-	<ContentPage.Content>
+    BindingContext="{Binding Main, Source={StaticResource Locator}}"
+    BackgroundColor="{StaticResource Red-400}">
+    <StackLayout
+        Padding="30"
+        VerticalOptions="Center">
+        <StackLayout
+            HorizontalOptions="Center">
+            <Label
+                FontAttributes="Bold"
+                Text="Conectate Con"
+                TextColor="White">
+            </Label>
+        </StackLayout>
         <StackLayout
             BindingContext ="{Binding Login}"
             HorizontalOptions="Center"
-            VerticalOptions="Center">
+            Padding="30"
+            VerticalOptions="Center"
+            WidthRequest="200">
             <Button
+                BackgroundColor="{StaticResource Google}"
                 Command="{Binding LoginGoogleCommand}"
                 Image=""
                 IsEnabled="{Binding IsEnable}"
-                Text="Enter with Google">
+                Text="Enter with Google"
+                TextColor="White">
             </Button>
             <Button
+                BackgroundColor="{StaticResource Facebook}"
                 Command="{Binding LoginFacebookCommand}"
                 Image=""
                 IsEnabled="{Binding IsEnable}"
-                Text="Enter with Facebook">
+                Text="Enter with Facebook"
+                TextColor="White">
             </Button>
         </StackLayout>
-	</ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Compra y vende rapidamente y con seguridad. cerca de ti."
+                TextColor="White">
+            </Label>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

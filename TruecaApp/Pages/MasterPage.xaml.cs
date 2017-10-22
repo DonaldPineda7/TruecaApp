@@ -14,7 +14,7 @@ namespace TruecaApp.Pages
 
         protected override void OnAppearing()
         {
-            App.Navigator = Navigator;
+            //App.Navigator = Navigator;
         }
     }
 }

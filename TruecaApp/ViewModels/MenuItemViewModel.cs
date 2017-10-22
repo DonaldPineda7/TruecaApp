@@ -8,7 +8,7 @@ namespace TruecaApp.ViewModels
     public class MenuItemViewModel
     {
         private NavigationService navigationService;
-        
+
         public string Icon
         {
             get;
@@ -32,6 +32,7 @@ namespace TruecaApp.ViewModels
             navigationService = new NavigationService();
         }
 
+        #region Commands
         public ICommand NavigateCommand
         {
             get
@@ -40,12 +41,12 @@ namespace TruecaApp.ViewModels
             }
         }
 
-        private void Navigate()
+        private async void Navigate()
         {
-            if(PageName == "LoginPage")
-            {
-                navigationService.SetMainPage("LoginPage");
-            }
+            await navigationService.Navigate("LoginPage");
         }
+
+      
+        #endregion
     }
 }
