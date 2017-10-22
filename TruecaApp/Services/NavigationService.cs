@@ -18,6 +18,9 @@ namespace TruecaApp.Services
                 case "LoginPage":
                     await App.Current.MainPage.Navigation.PushAsync(new LoginPage());
                     break;
+                case "LoginFacebookPage":
+                    await App.Current.MainPage.Navigation.PushAsync(new LoginFacebookPage());
+                    break;
                 default:
                     break;
             }

@@ -55,7 +55,7 @@ namespace TruecaApp.ViewModels
 
         private async void LoginFacebook()
         {
-            await navigationService.Navigate("MasterPage");
+            await navigationService.Navigate("LoginFaceboPage");
         }
         #endregion
 

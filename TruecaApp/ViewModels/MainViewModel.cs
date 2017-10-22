@@ -31,6 +31,20 @@ namespace TruecaApp.ViewModels
             LoadMenu();
             Login = new LoginViewModel();
         }
+
+        #endregion
+
+        #region Singleton
+        private static MainViewModel instance;
+
+        public static MainViewModel GetInstance()
+        {
+            if(instance == null)
+            {
+                instance = new MainViewModel();
+            }
+            return instance;
+        }
         #endregion
 
         #region Methods
