@@ -43,7 +43,7 @@ namespace TruecaApp.ViewModels
 
         private async void Navigate()
         {
-            await navigationService.Navigate("LoginPage");
+            await navigationService.Navigate(PageName);
         }
 
       

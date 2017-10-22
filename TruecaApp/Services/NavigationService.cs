@@ -12,6 +12,9 @@ namespace TruecaApp.Services
                 case "MasterPage":
                     await App.Current.MainPage.Navigation.PushAsync(new MasterPage());
                     break;
+                case "AboutPage":
+                    await App.Current.MainPage.Navigation.PushAsync(new AboutPage());
+                    break;
                 case "LoginPage":
                     await App.Current.MainPage.Navigation.PushAsync(new LoginPage());
                     break;

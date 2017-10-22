@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="TruecaApp.Pages.AboutPage"
+    Title="Historia">
+	<StackLayout
+        Padding="30">
+        <Label
+            Text="Somos un mercado de pulgas que promueve el reuso de todo tipo de objetos de segunda mano en buen estado.">
+        </Label>
+        <Label
+            Text="Somos una feria que impulsa el crecimiento de marcas innovadoras y creativas.">
+        </Label>
+        <Label
+            Text="Somos un espacio que reune a profesionales y artistas que crean objetos novedosos con material reciclado, hechos a mano.">
+        </Label>
+    </StackLayout>
+</ContentPage>

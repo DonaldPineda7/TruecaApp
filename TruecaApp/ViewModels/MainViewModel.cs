@@ -42,7 +42,7 @@ namespace TruecaApp.ViewModels
             {
                 Icon = "icons8-Male User-100.png",
                 PageName = "LoginPage",
-                Title = "Conectate"
+                Title = "Conectate!"
             });
 
             Menu.Add(new MenuItemViewModel
